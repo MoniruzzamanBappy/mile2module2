@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Practice</title>
+    <style>
+        .transition {
+            height: 200px;
+            width: 400px;
+            border: 2px solid red;
+            border-radius: 70px;
+            background-color: black;
+            text-align: center;
+            color: blanchedalmond;
+            transition: width 1s, transform 1s;
+        }
+
+        .transition:hover {
+            width: 800px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="transition">
+        <h1 id="text">Transition Someting</h1>
+    </div>
+
+</body>
+
+</html>

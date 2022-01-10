@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Practice</title>
+    <style>
+        .field {
+            width: 1200px;
+            border: 2px solid rgb(235, 144, 9);
+        }
+
+        .bat {
+            height: 300px;
+            width: 300px;
+            transition: transform .2s;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-65deg);
+            transform-origin: top right;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            background-color: sienna;
+            border-radius: 50%;
+            position: relative;
+            left: 427.5px;
+            transition: transform 3s ease-out .2s;
+        }
+
+        .field:hover .ball {
+            transform: translate(680px, -300px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="field">
+        <img class="bat" src="bat.png" alt="Cricket bat">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>
